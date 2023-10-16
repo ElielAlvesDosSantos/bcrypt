@@ -1,0 +1,34 @@
+/* Defina um esquema de cores personalizado */
+:root {
+    --background-color: aquamarine;
+    --text-color: white;
+    --link-color: white;
+    --link-hover-color: rgb(72, 131, 241);
+    --button-color: black;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: 1.25rem;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--link-hover-color);
+    cursor: pointer;
+}
+
+nav a:visited {
+    color: var(--link-color);
+}
+
+button, input {
+    background-color: var(--button-color);
+    color: var(--text-color);
+}
